@@ -13,8 +13,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //Requiring routing pages.
-require(".app/routing/apiRoutes.js")(app);
-require(".app/routing/htmlRoutes.js")(app);
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
 //Requiring friend data page.
 var friendArr = require("./app/data/friends.js");
