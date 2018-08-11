@@ -1,7 +1,7 @@
 module.exports = friendArr = [
     {
-        "name":"Ahmed",
-        "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqz8aHiIKjIF-DMMxCCxNB7Ao-MSafpxTuodRllbxmmsLLmHO_",
+        "name":"Patrick",
+        "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThDxmpliOVeAPx6p8plppTxvUmUpm_ZtW5VvecET41mYeHGXha",
         "scores":[
             5,
             1,
@@ -14,5 +14,54 @@ module.exports = friendArr = [
             4,
             1
           ]
-      }
+      },
+      {
+        "name":"Spongebod",
+        "photo":"https://pmcvariety.files.wordpress.com/2016/05/spongebob-nickelodeon.jpg?w=1000&h=563&crop=1",
+        "scores":[
+            4,
+            4,
+            1,
+            2,
+            3,
+            2,
+            5,
+            1,
+            2,
+            3
+          ]
+      },
+      {
+        "name":"Squidward",
+        "photo":"https://pbs.twimg.com/profile_images/823328240001548289/tAub3drr_400x400.jpg",
+        "scores":[
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+      },
+      {
+        "name":"Plankton",
+        "photo":"https://scishot.files.wordpress.com/2017/03/plankton.jpg?w=640",
+        "scores":[
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+      },
+      
 ];
