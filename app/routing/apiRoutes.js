@@ -8,20 +8,26 @@ module.exports = app => {
 
     app.post("/api/friends", function(req, res){
 
-        var newUser = req.body;
-        console.log(newUser);
-        //take in user data.scores
-        for (var i=0; i < newUser.scores.length; i++){
-            var index = parseInt(i);
-            var newSum =+ index;
-        };
+        let newUser = req.body.scores;
+        let scoreTotal = [];
+        let bestMatch = 0;
 
-        for(var i=0; i < friendArr.score.length; i++){
-            
+        for (var i = 0; i < friendArr.length; i++) {
+            var difference = 0;
+            for (var j = 0; j < newUser.length; j++) {
+                difference += (Math.abs(parseInt(friendArr[i].scores[j]) - parseInt(newUser[j])));
+            }
+            scoreTotal.push(difference)
         }
 
-        //for loop through the friendArr
-            //
-        friendArr.push(newUser);
+        for (var i = 0; i < scoreTotal.length; i++) {
+            if(scoreTotal[i] <= scoreTotal[bestMatch]) {
+                bestMatch = i
+            }
+        }
+        let bestFriend = friendArr[bestMatch];
+        
+        res.json(bestFriend)
+        friendArr.push(req.body)
     });
 };
