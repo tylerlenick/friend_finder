@@ -7,5 +7,5 @@ This application is a friend finding application that matches people based on co
 ### Technologies used
 This application is using Express.js to handle the routing and api, jQuery is used for the event handlers, and bootstrap for the layout.
 
-### Application Deployed at
+### Application Link
 https://pure-stream-64072.herokuapp.com/
